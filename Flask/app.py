@@ -38,7 +38,7 @@ def predict():
     imageFile = request.files["image_file"]
     imagePath = os.path.join("uploads/", imageFile.filename)
     imageFile.save(imagePath)
-    inputImage = image.load_img(imagePath, target_size=(224, 224))
+    inputImage = image.load_img(imagePath, target_size=(225, 224))
     inputImage = image.img_to_array(inputImage)
     inputImage = np.expand_dims(inputImage, axis=0)
     inputImage = inputImage / 255.0

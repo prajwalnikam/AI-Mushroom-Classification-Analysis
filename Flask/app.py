@@ -1,7 +1,9 @@
 # importing libraries
 from flask import Flask, render_template, url_for, request
-from keras.models import load_model
-from tensorflow.keras.preprocessing import image
+from PIL import Image
+
+from keras.models import load_model # type: ignore
+from tensorflow.keras.preprocessing import image # type: ignore
 import numpy as np
 import os
 
@@ -38,7 +40,7 @@ def predict():
     imageFile = request.files["image_file"]
     imagePath = os.path.join("uploads/", imageFile.filename)
     imageFile.save(imagePath)
-    inputImage = image.load_img(imagePath, target_size=(225, 224))
+    inputImage = image.load_img(imagePath, target_size=(224, 224))
     inputImage = image.img_to_array(inputImage)
     inputImage = np.expand_dims(inputImage, axis=0)
     inputImage = inputImage / 255.0

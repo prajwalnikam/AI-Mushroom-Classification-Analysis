@@ -23,7 +23,7 @@
 
 ```bash
 # Create a new conda environment
-conda create -n mushroom_classifier python=3.9
+conda create -n mushroom_classifier python=3.10.16
 
 # Activate the environment
 conda activate mushroom_classifier

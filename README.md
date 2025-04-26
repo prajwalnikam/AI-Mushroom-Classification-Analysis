@@ -29,7 +29,7 @@ conda create -n mushroom_classifier python=3.10.16
 conda activate mushroom_classifier
 
 # Clone the repository
-git clone https://github.com/Rohitmh09/AI-Mushroom-Classification-Analysis.git
+git clone https://github.com/prajwalnikam/AI-Mushroom-Classification-Analysis.git
 cd AI-Mushroom-Classification-Analysis-master
 
 # Install dependencies
@@ -85,7 +85,7 @@ AI-Mushroom-Classification-Analysis-master/
 ```
 
 ## **Technologies Used**
-- Python 3.10
+- Python 3.10.16
 - TensorFlow/Keras
 - Flask
 - HTML/CSS/JavaScript
